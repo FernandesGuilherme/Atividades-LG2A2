@@ -3,7 +3,7 @@ package exercicios;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import exercicios1.Funcionario;
+import exercicios.Funcionario;
 import org.junit.jupiter.api.Test;
 
 public class FuncionarioTeste {
@@ -45,6 +45,8 @@ public class FuncionarioTeste {
         Funcionario f1 = new Funcionario();
         f1.salario = 3000.0;
 
+
+        //Valor não está arredondado, se arredondas para duas casas dpois da virgula, o teste aponta erro
         double valorEsperado = 3300.0000000000005;
         double valoObtido = f1.promover(1.10);
 

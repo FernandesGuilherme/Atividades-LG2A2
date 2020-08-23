@@ -1,5 +1,5 @@
 package exercicios;
-
+//TESTES AUTOMATIZADOS
 
 import exercicios.Retangulo;
 import org.junit.jupiter.api.Test;

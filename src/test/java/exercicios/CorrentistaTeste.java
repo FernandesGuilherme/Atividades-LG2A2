@@ -1,6 +1,6 @@
 package exercicios;
 
-
+//TESTES AUTOMATIZADOS
 import exercicios.Correntista;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

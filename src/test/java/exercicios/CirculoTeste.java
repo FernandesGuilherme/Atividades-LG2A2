@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class CirculoTeste {
-
+//Sempre que for automatizar os teste, chamar @Test que importará as bibliotecas Junit
     @Test
     public void instanciaCirculo (){
         Circulo c1 = new Circulo();

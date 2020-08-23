@@ -1,11 +1,14 @@
-package exercicios1;
+package exercicios;
 
+//Atributos
 public class Funcionario {
     public String nome;
     public String email;
     public int idade;
     public double salario;
 
+
+    //Metodos
     public String obterDados(){
         return nome + ", " + idade + "anos" + "(" + email + ")";
     }
