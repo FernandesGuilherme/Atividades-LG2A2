@@ -1,7 +1,7 @@
-package exercicios;
+package exercicios_1;
 
 //TESTES AUTOMATIZADOS
-import exercicios.Correntista;
+import exercicios_1.Correntista;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -11,8 +11,8 @@ public class CorrentistaTeste {
 
     @Test
     public void instanciaCorrentista (){
-    Correntista c1 = new Correntista();
-    assertNotNull(c1);
+        Correntista c1 = new Correntista();
+        assertNotNull(c1);
 
     }
     @Test

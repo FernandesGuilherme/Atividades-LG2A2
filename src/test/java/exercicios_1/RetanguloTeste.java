@@ -1,7 +1,7 @@
-package exercicios;
+package exercicios_1;
 //TESTES AUTOMATIZADOS
 
-import exercicios.Retangulo;
+import exercicios_1.Retangulo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

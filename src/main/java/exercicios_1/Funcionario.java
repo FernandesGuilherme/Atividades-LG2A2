@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios_1;
 
 //Atributos
 public class Funcionario {

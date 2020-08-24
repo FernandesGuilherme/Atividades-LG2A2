@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios_1;
 
 public class Circulo {
     public double raio;

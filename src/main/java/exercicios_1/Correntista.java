@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios_1;
 
 public class Correntista {
     public int codigo;

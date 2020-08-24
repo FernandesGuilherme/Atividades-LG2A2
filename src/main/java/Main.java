@@ -1,6 +1,6 @@
 //Ultima Atualização dia 22 de Agosto ás 04:12 AM
-import exercicios.Retangulo;
-import exercicios.Circulo;
+import exercicios_1.Retangulo;
+import exercicios_1.Circulo;
 
 //Testes na main
 public class Main {

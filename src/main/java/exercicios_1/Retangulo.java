@@ -1,4 +1,4 @@
-package exercicios;
+package exercicios_1;
 
 public class Retangulo {
     public Double base;
