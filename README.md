@@ -609,3 +609,4 @@ Manual proxy configuration
 Host name: 10.100.4.253
 
 Port number: 3128
+"Atividades de l¢gica de programa‡Æo" 
