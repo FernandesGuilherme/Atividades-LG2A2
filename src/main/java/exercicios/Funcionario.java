@@ -8,7 +8,6 @@ public class Funcionario {
     public double salario;
 
 
-    //Metodos
     public String obterDados(){
         return nome + ", " + idade + "anos" + "(" + email + ")";
     }

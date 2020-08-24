@@ -6,7 +6,6 @@ public class Correntista {
     public String email;
     public String telefone;
 
-    //metodos
 
     public String pegarDados (){
         return codigo + " - " + nome + " - " + email + " - " + telefone;
