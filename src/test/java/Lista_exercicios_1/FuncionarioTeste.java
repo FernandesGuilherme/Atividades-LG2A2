@@ -1,9 +1,8 @@
-package exercicios_1;
+package Lista_exercicios_1;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import exercicios_1.Funcionario;
 import org.junit.jupiter.api.Test;
 
 public class FuncionarioTeste {

@@ -1,7 +1,6 @@
-package exercicios_1;
+package Lista_exercicios_1;
 
 
-import exercicios_1.Circulo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -44,11 +43,4 @@ public class CirculoTeste {
         Double valorObtido = c1.calcularPerimetro();
         assertEquals(valorEperado, valorObtido);
     }
-
-
-
-
-
-
-
 }

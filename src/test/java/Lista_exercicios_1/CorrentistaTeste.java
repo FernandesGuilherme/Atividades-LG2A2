@@ -1,7 +1,6 @@
-package exercicios_1;
+package Lista_exercicios_1;
 
 //TESTES AUTOMATIZADOS
-import exercicios_1.Correntista;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
