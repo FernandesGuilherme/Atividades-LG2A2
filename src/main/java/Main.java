@@ -1,6 +1,6 @@
 //Ultima Atualização dia 22 de Agosto ás 04:12 AM
-import Lista_exercicios_1.Retangulo;
-import Lista_exercicios_1.Circulo;
+import Semana04.Lista_exercicios_1.Retangulo;
+import Semana04.Lista_exercicios_1.Circulo;
 
 //Testes na main
 public class Main {

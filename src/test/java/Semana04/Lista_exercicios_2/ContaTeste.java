@@ -1,5 +1,6 @@
-package Lista_exercicios_2;
+package Semana04.Lista_exercicios_2;
 
+import Semana04.Lista_exercicios_2.Conta;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,9 +12,8 @@ public class ContaTeste {
 
         @BeforeEach
         public void beforeEach() {
-            conta1 = new Conta();
-            conta1.setNumero(1);
-            conta1.setSaldo(100.0);
+            conta1 = new Conta(1,100.0);
+
         }
 
         @AfterEach
@@ -34,13 +34,12 @@ public class ContaTeste {
 
         @Test
         public void metodoDepositar() {
-            conta1.depositar(50.0);
+            conta1.depositar(50.0, conta1);
         }
 
         @Test
         public void metodoDepositarValorInvalido() {
-            Exception exception = assertThrows(IllegalArgumentException.class, () -> conta1.depositar(0.0));
-            assertEquals("Valor deve ser maior que zero.", exception.getMessage());
+          conta1.depositar(0.0, conta1);
         }
 
         @Test
@@ -59,7 +58,7 @@ public class ContaTeste {
 
         @Test
         public void metodoSacarSaldoInsuficiente() {
-            conta1.sacarSaldoInsuficiente(800.0);
+            conta1.sacar(800.0);
 
         }
 
@@ -70,16 +69,16 @@ public class ContaTeste {
 
         @Test
         public void metodoTransferirValorInvalido() {
-            conta1.metodoTransferirValorInvalido(100.00);
+            conta1.transferir(conta1,100.00);
         }
 
         @Test
         public void metodoTransferirSaldoInsuficiente() {
-            conta1.metodoTransferirValorInvalido(0);
+            conta1.transferir(conta1,0.0);
 
         }
         @Test
         public void depositarValorInvalido (){
-            conta1.depositarValorInvalido(0);
+            conta1.depositar(0,conta1);
         }
     }

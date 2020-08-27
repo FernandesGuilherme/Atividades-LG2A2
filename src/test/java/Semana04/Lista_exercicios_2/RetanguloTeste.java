@@ -1,7 +1,8 @@
-package Lista_exercicios_2;
+package Semana04.Lista_exercicios_2;
 // Implementar os métodos getters e setter nas classes Retangulo e Circulo
 
 
+import Semana04.Lista_exercicios_2.Retangulo;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

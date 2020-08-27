@@ -1,6 +1,7 @@
-package Lista_exercicios_1;
+package Semana04.Lista_exercicios_1;
 
 
+import Semana04.Lista_exercicios_1.Circulo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

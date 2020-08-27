@@ -1,7 +1,8 @@
-package Lista_exercicios_2;
+package Semana04.Lista_exercicios_2;
 // Implementar os métodos getters e setter na classe Correntista
 
 
+import Semana04.Lista_exercicios_2.Correntista;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
