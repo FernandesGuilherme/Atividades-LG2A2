@@ -10,12 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class CorrentistaTeste {
-    private CorrentistaTeste c1;
+    private Correntista c1;
 
     @BeforeEach
     public void beforeEach (){
         c1 = new Correntista();
-        c1.se
+        c1.setCodigo(1);
         c1.setEmail("fernandes.lima@aluno.ifsp.edu.br");
         c1.setNome("Guilherme");
         c1.setTelefone("950895021");
