@@ -1,7 +1,6 @@
-package Semana04.Lista_exercicios_1;
+package Semana5.Lista_exercicios_1;
 //TESTES AUTOMATIZADOS
 
-import Semana04.Lista_exercicios_1.Retangulo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

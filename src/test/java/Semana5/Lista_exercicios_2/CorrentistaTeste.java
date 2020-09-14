@@ -1,8 +1,7 @@
-package Semana04.Lista_exercicios_2;
+package Semana5.Lista_exercicios_2;
 // Implementar os métodos getters e setter na classe Correntista
 
 
-import Semana04.Lista_exercicios_2.Correntista;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,12 +10,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class CorrentistaTeste {
-    private Correntista c1;
+    private CorrentistaTeste c1;
 
     @BeforeEach
     public void beforeEach (){
         c1 = new Correntista();
-        c1.setCodigo(1);
+        c1.se
         c1.setEmail("fernandes.lima@aluno.ifsp.edu.br");
         c1.setNome("Guilherme");
         c1.setTelefone("950895021");

@@ -1,8 +1,9 @@
-package Semana04;
+package Semana5;
 
-import Semana04.Lista_exercicios_2.Conta;
+import Semana5.Lista_exercicios_2.Conta;
 
 public class MainTeste {
+    //Classe de teste para atividades da semana 4;
     public static void main(String[] args) {
         Conta c1 = new Conta(2115);
         Conta c2 = new Conta(2000);
@@ -21,8 +22,8 @@ public class MainTeste {
 
         c2.sacar(115.0);
 
+//Concertar metodo sacar;
         System.out.println("Saldo apos sacar"+ c2.getSaldo());
-//Consetar metodo sacar;
 
 
 

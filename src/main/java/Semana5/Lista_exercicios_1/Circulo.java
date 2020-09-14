@@ -1,4 +1,4 @@
-package Semana04.Lista_exercicios_1;
+package Semana5.Lista_exercicios_1;
 
 public class Circulo {
     public double raio;

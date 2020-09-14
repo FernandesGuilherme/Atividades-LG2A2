@@ -1,4 +1,4 @@
-package Semana04.Lista_exercicios_2;
+package Semana5.Lista_exercicios_2;
 
 public class Correntista {
     private int codigo;

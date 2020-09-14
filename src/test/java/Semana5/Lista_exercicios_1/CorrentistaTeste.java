@@ -1,11 +1,10 @@
-package Semana04.Lista_exercicios_1;
+package Semana5.Lista_exercicios_1;
 
 //TESTES AUTOMATIZADOS
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import Semana04.Lista_exercicios_1.Correntista;
 import org.junit.jupiter.api.Test;
 
 public class CorrentistaTeste {

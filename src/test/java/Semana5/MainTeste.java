@@ -1,4 +1,4 @@
-package Semana04;
+package Semana5;
 
 public class MainTeste {
 }

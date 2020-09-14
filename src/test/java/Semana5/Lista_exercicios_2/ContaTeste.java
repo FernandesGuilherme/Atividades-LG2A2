@@ -1,6 +1,8 @@
-package Semana04.Lista_exercicios_2;
+package Semana5.Lista_exercicios_2;
 
-import Semana04.Lista_exercicios_2.Conta;
+// Implementando Getter Setter e Construtor
+
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -74,7 +76,7 @@ public class ContaTeste {
 
         @Test
         public void metodoTransferirSaldoInsuficiente() {
-            conta1.transferir(conta1,0.0);
+            conta1.transferir(conta1,15000.0);
 
         }
         @Test
