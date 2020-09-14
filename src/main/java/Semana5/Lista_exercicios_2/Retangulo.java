@@ -1,6 +1,8 @@
 package Semana5.Lista_exercicios_2;
 // Implementar os métodos getters e setter nas classes  Retangulo e Circulo
 
+import Semana8.Gerente;
+
 public class Retangulo {
     private double  base ;
     private double altura;
