@@ -3,7 +3,7 @@ package Semana9;
 public class ControleBonificacao {
     private double totalDeBonificacoes = 0;
 
-//Metodo para registrar um Funcionario (passando por parametro)
+//Metodo para registrar um Gerente (passando por parametro)
     public void registraGerente (Gerente g) {
         System.out.println("Adicionando bonificação do funcionario:  ");
         this.totalDeBonificacoes += g.getbonificacao();

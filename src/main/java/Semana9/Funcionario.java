@@ -1,11 +1,11 @@
 package Semana9;
 
-// Atividade Atividade da Apostila Capitulo 10 Classes abstradas .
+// Atividade Atividade da Apostila Capitulo 10 Classes abstratas.
 public  abstract class Funcionario {
     private  String nome;
 
     protected double salario;
-    public abstract double getbonificacao(); //Metodo abstrato, sempre que usar em uma classe mão, as filhas são obrigado a te-lo;
+    public abstract double getbonificacao(); //Metodo abstrato, sempre que usar em uma classe mãe, as filhas são obrigado a ter;
 
     public double getBonificacao() {
         return this.salario * 1.2;
@@ -27,7 +27,7 @@ public  abstract class Funcionario {
         return salario;
     }
 
-    //Metodo bonificação para Funcinario, sofre sobrescrita em Gerente
+    //Metodo bonificação para Funcionario, sofre sobrescrita em Gerente
     public double bonificacao() {
         return this.salario * 0.10;
     }

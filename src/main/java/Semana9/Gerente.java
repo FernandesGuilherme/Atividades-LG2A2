@@ -3,15 +3,19 @@ package Semana9;
 public class Gerente extends Funcionario {
     private int senha;
 
-    //Metodo abstrato obrigado a ser escrito
-
-    @Override
+    //Método abstrato obrigado a ser escrito na classe filha
     public double getbonificacao() {
         return  (this.salario * 1.4) + 1000;
     }
 
     public void setSenha (int senha){
         this.senha = senha;
+    }
+
+    //Sobrescrita do método bonificação
+    @Override
+    public double bonificacao() {
+        return super.bonificacao() - 10;
     }
 
     public int getSenha (){
