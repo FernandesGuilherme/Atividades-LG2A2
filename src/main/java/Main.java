@@ -1,26 +1,44 @@
 //Ultima Atualização dia 22 de Agosto ás 04:12 AM
-import Semana5.Lista_exercicios_1.Retangulo;
-import Semana5.Lista_exercicios_1.Circulo;
-import Semana8.Funcionario;
-import Semana8.Gerente;
+
+
+import Semana9.ControleBonificacao;
+import Semana9.Gerente;
+
+import java.text.DateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.util.Locale;
 
 //Testes na main
 public class Main {
     public static void main(String[] args) {
+        System.out.println();
+
+       // Locale.setDefault(Locale.ENGLISH);
+        LocalDateTime loca = LocalDateTime.now();
+        DateTimeFormatter formatandoData = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
+        String formatar = formatandoData.format(loca);
+        System.out.println(formatar + ".");
+
+
+        System.out.println();
+
+
         Gerente gerente = new Gerente();
-        gerente.setNome("Guilherme"); // Metodo de Funcionario
-        gerente.setSenha(123); // Metodo de Gerente
-        gerente.autentica(123);
+        ControleBonificacao controle = new ControleBonificacao();
 
+        gerente.setNome("Guilherme");
+        gerente.setSalario(10000.0);
+        gerente.getbonificacao();
+        gerente.setSenha(1234);
+        gerente.autenticaSenha(1234);
 
-        Funcionario fun = new Funcionario();
-        fun.setSalario(5000.0);
-        gerente.setSalario(5000.0);
-
-
-        System.out.println(fun.bonificacao());
-        System.out.println(gerente.bonificacao());
-
-
+        controle.registraGerente(gerente);
+        System.out.println("Nome:" + gerente.getNome());
+        System.out.println("Salário: " + gerente.getSalario());
+        System.out.println("Bonificação: " + gerente.getbonificacao());
+        System.out.println("Total: "+controle.getTotalDeBonificacoes());
+        System.out.println("Salaraio + Bonificação: "+controle.salarioFInal(gerente));
     }
 }

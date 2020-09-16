@@ -1,21 +1,24 @@
 package Semana8;
 
-public class ProfessorDaFaculdade extends EmpregadosFaculdade {
-    private int horaDeAula;
-    public  double getGastos(){
-        return this.getSalario() + this.horaDeAula * 10;
+public class ProfessorDaFaculdade extends EmpregadosFaculdade	{
+    private int	horasDeAula;
+    public	double	getGastos() {
+        return this.getSalario()  +	this.horasDeAula	*	10;
     }
-    public String getInfo (){
-        String infoBasica = super.getinfo();
-        String informacao = infoBasica + " Total de horas " + this.horaDeAula;
-        return informacao;
+    public	String	getInfo() {
+        String	informacaoBasica	=	super.getinfo();
+        String	informacao	=	informacaoBasica	+	"	horas	de	aula:	"
+                +	this.horasDeAula;
+        return	informacao;
     }
 
+
     public int getHoraDeAula() {
-        return horaDeAula;
+        return horasDeAula;
     }
 
     public void setHoraDeAula(int horaDeAula) {
-        this.horaDeAula = horaDeAula;
+        this.horasDeAula = horaDeAula;
     }
+
 }

@@ -9,6 +9,7 @@ public class Gerente extends Funcionario {
             System.out.println("Acesso permitido");
             return  true;
         }else{
+            System.out.println();
             System.out.println("Acesso negado");
             return false;
         }

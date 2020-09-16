@@ -19,7 +19,7 @@ public class EmpregadosFaculdade {
     }
 
     public double getSalario() {
-        return salario;
+        return this.salario;
     }
 
     public void setSalario(double salario) {
