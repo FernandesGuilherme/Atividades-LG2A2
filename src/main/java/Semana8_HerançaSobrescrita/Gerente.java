@@ -1,4 +1,4 @@
-package Semana8;
+package Semana8_HerançaSobrescrita;
 
 public class Gerente extends Funcionario {
     private int senha;

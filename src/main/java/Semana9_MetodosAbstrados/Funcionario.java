@@ -1,4 +1,4 @@
-package Semana9;
+package Semana9_MetodosAbstrados;
 
 // Atividade Atividade da Apostila Capitulo 10 Classes abstratas.
 public  abstract class Funcionario {

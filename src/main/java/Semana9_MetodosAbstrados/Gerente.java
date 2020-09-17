@@ -1,4 +1,4 @@
-package Semana9;
+package Semana9_MetodosAbstrados;
 
 public class Gerente extends Funcionario {
     private int senha;

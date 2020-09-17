@@ -1,4 +1,4 @@
-package Semana8;
+package Semana8_HerançaSobrescrita;
 // Atividade Atividade da Apostila Capitulo 9.
 public class Funcionario {
     protected String nome;
