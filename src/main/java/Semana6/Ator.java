@@ -9,20 +9,21 @@ public class Ator {
     private String nome;
     private  List <Papel> papeis;
     private List <Filme> filmes;
+    private Filme filme;
 
-    public Ator (String nome, Papel papel){
-        this.papeis = new ArrayList<>();
-        this.papeis.add(papel);
-        this.nome = nome;
-
-    }
     public Ator (String nome){
         this.nome = nome;
+
     }
 
     public boolean atuouNoAno (int ano){
-        return true;
+        if (filme.getAno() == ano){
+            return true;
+        }else{
+            return false;
+        }
     }
+
     public List <Filme> getFilme (){
         return  filmes;
     }

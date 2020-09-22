@@ -12,11 +12,6 @@ public class Papel {
         this.protagonista = protagonista;
         this.ator = ator;
     }
-
-    public Papel(String nome, boolean protagonista) {
-        this.nome = nome;
-        this.protagonista = protagonista;
-    }
     public Ator ator (){
         return ator;
     }

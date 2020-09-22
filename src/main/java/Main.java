@@ -19,11 +19,17 @@ public class Main {
         System.out.println(formatarData + ".");
 
         System.out.println();
+        Diretor diretor = new Diretor();
 
 
         Autenticavel a = new Gerente();
         a.autentica(123);
 
+        if (a instanceof Autenticavel) {
+            a.autentica(123);
+        }else {
+            System.err.println("A Classe Gerente não implementa Autenticavel, nenhum procedimento foi realizado");
+        }
 
     }
 }

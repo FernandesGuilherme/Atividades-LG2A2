@@ -2,11 +2,11 @@ package Semana10_Interface;
 
 public class Diretor extends Funcionario implements Autenticavel {
 int senha = 3334;
-
     public int getSenha() {
         return senha;
     }
-    public void setSenha(int senha){
+
+    private void setSenha(int senha) {
         this.senha = senha;
     }
 
@@ -24,6 +24,7 @@ int senha = 3334;
             throw new IllegalArgumentException("Acesso negado");
     }
 
+    //implementando imterface
     @Override
     public boolean autentica(int senha) {
         if (this.senha != senha){
