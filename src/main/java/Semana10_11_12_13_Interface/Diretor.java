@@ -1,4 +1,4 @@
-package Semana10_Interface;
+package Semana10_11_12_13_Interface;
 
 public class Diretor extends Funcionario implements Autenticavel {
 int senha = 3334;
