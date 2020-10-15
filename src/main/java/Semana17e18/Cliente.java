@@ -44,10 +44,10 @@ public class Cliente {
     }
 
     public void validaCPF (String CPF){
-        if ((getCPF().length() > 12) || (getCPF().length() < 12)){
+        if ((getCPF().length() > 12) /*|| (getCPF().length() < 12)*/){
             throw  new IllegalArgumentException();
         }else {
-            System.out.println("CLiente válido");
+            System.out.println("Cliente válido\n\n");
         }
     }
     public double GerarIDCliente (){

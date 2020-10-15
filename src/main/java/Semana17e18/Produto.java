@@ -43,9 +43,10 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public double valorTotal (){
-        total += getPrecoUnidade(); pre += getQuantidade();
-        return total * pre;
+    public void valorTotal (){
+        total += getPrecoUnidade() * getQuantidade();
+        System.out.println("TOTAL: "+ total);
+
     }
 
     public double GerarIdProduto(){
@@ -53,14 +54,18 @@ public class Produto {
         valorAleatorio = Math.round(id);
         return valorAleatorio;
     }
+
+
     public void listaProduto () throws IOException {
 
         Scanner entrada = new Scanner(System.in);
         int quantidade;
-        System.out.println("1 X Salada ");
-        System.out.println("2 X Burguer  ");
-        System.out.println("3 Coca cola ");
-        System.out.println("0 - Finalizar");
+        System.out.println("1 - X Salada: 10,00 R$ ");
+        System.out.println("2 - X Burguer: 10,00 R$ ");
+        System.out.println("3 - Coca cola: 5,00 R$ ");
+        System.out.println("4 - Finalizar");
+        System.out.println("0 - Adicionar");
+        System.out.printf("Ao escolher um produto, adicione e repita o processo para o próximo e digite 0\n");
         System.out.println("Escolha: ");
         int escolha = entrada.nextInt();
 
@@ -75,6 +80,7 @@ public class Produto {
                     break;
                 case 2:
                     setPrecoUnidade(10.0);
+                    int valorUnitario = 10;
                     System.out.println("Quantidade: ");
                     quantidade = entrada.nextInt();
                     setQuantidade(quantidade);
@@ -87,14 +93,14 @@ public class Produto {
                     setQuantidade(quantidade);
                     listaProduto();
                     break;
+                case 4:
+                    valorTotal();
+                        System.exit(0);
             }
         } while (escolha != 0);
-        total();
+        valorTotal();
     }
-        public void  total(){
-            System.out.println("teste" + valorTotal());
-            System.exit(0);
-        }
+
 
     }
 //Terminar metodo de calculo

@@ -8,6 +8,7 @@ public class Mainteste {
     public static void main(String[] args) throws IOException {
         BufferedReader palavra = new BufferedReader (new InputStreamReader(System.in));
 
+        /*
         System.out.println("Informe o seu nome: ");
         String nome = palavra.readLine();
 
@@ -16,10 +17,10 @@ public class Mainteste {
 
         Cliente cliente = new Cliente(CPF,nome);
         cliente.validaCPF(CPF);
-
+*/
         Produto produto = new Produto();
         ListaDeProdutos lista = new ListaDeProdutos();
         produto.listaProduto();
-        produto.total();
+        produto.valorTotal();
     }
 }
