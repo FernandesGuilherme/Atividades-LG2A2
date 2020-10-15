@@ -18,6 +18,7 @@ public class Mainteste {
         cliente.validaCPF(CPF);
 
         Produto produto = new Produto();
+        ListaDeProdutos lista = new ListaDeProdutos();
         produto.listaProduto();
         produto.total();
     }

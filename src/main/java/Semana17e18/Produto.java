@@ -27,7 +27,6 @@ public class Produto {
         return idProduto;
     }
 
-
     public double getPrecoUnidade() {
         return unidade;
     }
@@ -45,7 +44,7 @@ public class Produto {
     }
 
     public double valorTotal (){
-        total += quantidade; pre += unidade;
+        total += getPrecoUnidade(); pre += getQuantidade();
         return total * pre;
     }
 
@@ -94,6 +93,8 @@ public class Produto {
     }
         public void  total(){
             System.out.println("teste" + valorTotal());
+            System.exit(0);
         }
 
     }
+//Terminar metodo de calculo
