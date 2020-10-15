@@ -7,25 +7,45 @@ import java.util.List;
 public class Filme {
     private String titulo;
     private int ano;
-    private List<Ator> papeis;
+    private List<Papel> papeis;
     private  Ator atores;
 
     public Filme (String nome,String titulo ,int ano){
         this.titulo = titulo;
         this.ano = ano;
-        this.papeis = new ArrayList<Ator>();
+        this.papeis = new ArrayList<Papel>();
     }
 
-    //Deve adicionar um novo papel na lista de papeis do filme e garantir que o filme tenha apenas um protagonista
-    public  void addPapel (Ator ator, Boolean nome, boolean protagonista){
-           papeis.add(ator);
-
+    public  void addPapel (Ator ator, String nome, boolean protagonista){
+        boolean pro = false;
+        for(Papel papel : this.papeis) {
+            if (papel.isProtagonista())
+                pro= true;
+        }
+        if(pro == true) {
+            throw new IllegalArgumentException("Existe um protagonista.");
+        } else {
+            Papel novoPapel = new Papel(nome,protagonista,ator);
+            this.papeis.add(novoPapel);
+        }
 
     }
-    //Deve retornar um lista de atores que participaram do filme
     public List<Ator> getAtores (){
-        return papeis;
+        List<Ator> lista = new ArrayList<>();
+        for(Papel papel : this.papeis) {
+            lista.add(papel.getAtor());
+        }
+        return lista;
     }
+
+    public Ator getProtagonista(){
+        for(Papel papel : this.papeis) {
+            if (papel.isProtagonista())
+                return papel.getAtor();
+        }
+        return null;
+    }
+
     public String getTitulo (){
         return titulo;
     }
@@ -42,11 +62,10 @@ public class Filme {
         this.ano = ano;
     }
 
-    public List<Ator> getPapeis() {
+    public List<Papel> getPapeis() {
         return papeis;
     }
-
-    public void setPapeis(List<Ator> papeis) {
+    public void setPapeis(List<Papel> papeis) {
         this.papeis = papeis;
     }
 }

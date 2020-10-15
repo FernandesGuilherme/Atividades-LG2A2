@@ -13,22 +13,29 @@ public class Ator {
 
     public Ator (String nome){
         this.nome = nome;
-
+        this.papeis = new ArrayList<>();
     }
-
-    public boolean atuouNoAno (int ano){
-        if (filme.getAno() == ano){
-            return true;
-        }else{
-            return false;
+    public boolean atuouNoAno(int ano){
+        for(Papel papel : this.papeis){
+            if (papel.getFilme().getAno() == ano)
+                return true;
         }
-    }
-
-    public List <Filme> getFilme (){
-        return  filmes;
+        return false;
     }
 
     public String getNome() {
         return nome;
     }
+    public void addPapel(Papel papel) {
+        this.papeis.add(papel);
+    }
+    public List<Filme> getFilmes(){
+        List<Filme> lista = new ArrayList<>();
+        for(Papel papel : this.papeis) {
+            if(papel.getAtor() == this.papeis)
+                lista.add(papel.getFilme());
+        }
+        return lista;
+    }
+
 }
