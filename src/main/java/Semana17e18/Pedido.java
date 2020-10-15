@@ -6,6 +6,6 @@ public class Pedido {
 
 ///ARUMAR REDUMO DO PEDIDO
     public void dadosPedido(){
-        System.out.println(cliente.GerarIDCliente() + cliente.getCPF() + cliente.getNome());
+        System.out.println(cliente.getCPF() + cliente.getNome());
     }
 }

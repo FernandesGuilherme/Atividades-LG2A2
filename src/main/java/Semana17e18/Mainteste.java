@@ -12,15 +12,26 @@ public class Mainteste {
         System.out.println("Informe o seu nome: ");
         String nome = palavra.readLine();
 
-        System.out.println("Informe o seu CPF: ");
-        String CPF = palavra.readLine();
+
 
         Cliente cliente = new Cliente(CPF,nome);
         cliente.validaCPF(CPF);
-*/
         Produto produto = new Produto();
         ListaDeProdutos lista = new ListaDeProdutos();
         produto.listaProduto();
         produto.valorTotal();
-    }
+
+         */
+        System.out.println("Informe o seu CPF para validar pedido: ");
+        String CPF = palavra.readLine();
+
+        Cliente cliente = new Cliente(CPF,"Guillherme","Rua 1");
+        cliente.validaCPF(CPF);
+        Produto produto = new Produto("X Salada", 10.0, 2);
+        produto.valorTotal();
+        Pedido pedido = new Pedido();
+    //    pedido.dadosPedido();
+
+  }
+
 }
