@@ -11,10 +11,10 @@ public class Cliente {
         this.nome = nome;
         this.endereco = endereco;
     }
-    public Cliente(String CPF, String nome) {
-        this.CPF = CPF;
-        this.nome = nome;
+    public Cliente (){
+
     }
+
     public int getIdCliente() {
         return idCliente;
     }
@@ -44,7 +44,7 @@ public class Cliente {
     }
 
     public void validaCPF (String CPF){
-        if ((getCPF().length() > 12) /*|| (getCPF().length() < 12)*/){
+        if ((getCPF().length() > 11) && (getCPF().length() < 11)){
             throw  new IllegalArgumentException();
         }else {
             System.out.println("Cliente válido\n\n");
@@ -55,4 +55,5 @@ public class Cliente {
         valorAleatorio = Math.round(id);
         return valorAleatorio;
     }
+
 }
