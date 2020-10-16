@@ -1,11 +1,10 @@
 package Semana17e18;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Produto {
+    List<Produto> produtos = new ArrayList<Produto>();
     private int idProduto;
     private String nome;
     private double unidade;
@@ -62,6 +61,10 @@ public class Produto {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public void addProduto (Produto produto){
+        this.produtos.add(produto);
     }
 
 }
