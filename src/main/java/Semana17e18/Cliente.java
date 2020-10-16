@@ -43,10 +43,10 @@ public class Cliente {
         this.endereco = endereco;
     }
 
-    public void validaCPF (String CPF){
-        if ((getCPF().length() > 11) && (getCPF().length() < 11)){
-            throw  new IllegalArgumentException();
-        }else {
+    public void validaCPF (String cpf){
+        if (cpf.length() != 11){
+            throw  new IllegalArgumentException("CPF inválido");
+        }else{
             System.out.println("Cliente válido\n\n");
         }
     }

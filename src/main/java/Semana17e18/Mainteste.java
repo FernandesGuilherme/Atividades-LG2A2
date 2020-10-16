@@ -24,14 +24,18 @@ public class Mainteste {
         String CPF = palavra.readLine();
 
         Cliente cliente = new Cliente(CPF,"Guillherme","Rua 1");
+        cliente.validaCPF(CPF);
+
         Produto produto = new Produto("X Salada", 10.0, 2);
         Pedido pedido = new Pedido();
 
-        produto.valorTotal();
-        cliente.validaCPF(CPF);
         pedido.dadosPedido(cliente, produto);
 
 
-  }
+        produto.valorTotal();
+
+
+
+    }
 
 }

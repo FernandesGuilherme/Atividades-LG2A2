@@ -45,16 +45,22 @@ public class Produto {
 
     public void valorTotal (){
         total += getPrecoUnidade() * getQuantidade();
-        System.out.println("TOTAL: "+ total);
+        System.out.println("VALOR TOTAL DO PEDIDO: "+ total);
 
     }
-
     public double GerarIdProduto(){
         double valorAleatorio, id = Math.random() * 1000;
         valorAleatorio = Math.round(id);
         return valorAleatorio;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     public void listaProduto () throws IOException {
 
