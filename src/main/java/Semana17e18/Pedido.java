@@ -10,7 +10,7 @@ double valorAleatorio;
         valorAleatorio = Math.round(id);
         int v = (int) valorAleatorio;
 
-        String pedido = "Pedido: " + v + " "  +"\nCliente:" + cliente.getCPF() + "\nItens: " + produto.getNome() + ", " + produto.getQuantidade() + " Unidades";
+        String pedido = "Pedido:" + v + " "  +"\nCliente:" + cliente.getCPF() + "\nItens: " + produto.getNome() + ", " + produto.getQuantidade() + " Unidades";
         System.out.println(pedido);
 
     }
